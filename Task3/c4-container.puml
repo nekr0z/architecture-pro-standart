@@ -11,7 +11,7 @@ Person(front, "Сотрудник отделения")
 Person(back, "Менеджер депозитов")
 Person(risk, "Менеджер кредитования")
 System_Ext(site, "Сайт банка", "PHP, React")
-System_Ext(cc, "Система кол-центра", "Платформа подрядчика")
+System_Ext(cc, "Система кол-центра", "React / Spring Boot / PostgreSQL")
 System_Ext(sms, "СМС-шлюз", "Доставка через телеком-оператора")
 
 System_Boundary(internet, "Интернет-банк") {
@@ -22,26 +22,26 @@ System_Boundary(internet, "Интернет-банк") {
 System_Boundary(core, "АБС") {
     Container(desktop, "Рабочее место сотрудника", "Delphi", "Идентификация, ставки и рассмотрение заявки по ролям")
     ContainerDb(oracle, "БД и бизнес-логика АБС", "Oracle / PL/SQL", "Версии ставок, заявки, документы, депозиты и события для СМС")
-    Container(worker, "Адаптер депозитов", "Java, фоновое приложение", "Обмен малыми пакетами, приём обращений и доставка уведомлений")
+    Container(worker, "Адаптер депозитов", "Java, фоновое приложение", "Один фоновый вызов Oracle за раз, с ограничением частоты")
 }
 
 Rel(newclient, site, "Оставляет контакты", "HTTPS")
-Rel(operator, cc, "Обрабатывает обращение")
+Rel(operator, cc, "Обрабатывает обращение", "HTTPS")
 Rel(site, cc, "Создаёт обращение", "HTTPS")
 Rel(cc, worker, "Передаёт обращение и пожелания клиента", "HTTPS")
 Rel(site, api, "Читает общий каталог", "HTTPS")
 Rel(client, web, "Выбирает депозит, подтверждает заявку", "HTTPS")
-Rel(web, sql, "Читает профиль клиента", "SQL")
+Rel(web, sql, "Читает профиль клиента", "TDS / TLS")
 Rel(web, api, "Запрашивает ставки клиента, передаёт заявку и код", "HTTPS")
-Rel(api, sql, "Хранит каталог и заявки", "SQL")
-Rel(api, sms, "Отправляет одноразовый код", "TLS")
+Rel(api, sql, "Хранит каталог и заявки", "TDS / TLS")
+Rel(api, sms, "Отправляет одноразовый код", "HTTPS")
 Rel(worker, api, "Публикует ставки и изменения условий, принимает заявки", "HTTPS, пакетами")
-Rel(worker, oracle, "Импортирует заявки, читает изменения ставок и события", "PL/SQL")
-Rel(worker, sms, "Передаёт СМС о ставке и открытии", "TLS")
+Rel(worker, oracle, "Импортирует заявки, читает изменения ставок и события", "Oracle Net / TLS")
+Rel(worker, sms, "Передаёт СМС о ставке и открытии", "HTTPS")
 Rel(front, desktop, "Идентифицирует клиента, оформляет документы")
 Rel(back, desktop, "Согласует ставку и открытие")
 Rel(risk, desktop, "Вносит базовую ставку и риск")
-Rel(desktop, oracle, "Вызывает процедуры согласно роли", "PL/SQL")
+Rel(desktop, oracle, "Вызывает процедуры согласно роли", "Oracle Net / TLS")
 
 SHOW_LEGEND()
 @enduml

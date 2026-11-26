@@ -390,8 +390,8 @@
         <mxCell id="72ORIeSIiEWqqJe_lCAG-129" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Интернет-банк" vertex="1">
           <mxGeometry height="60" width="120" x="260" y="1030" as="geometry" />
         </mxCell>
-        <mxCell id="72ORIeSIiEWqqJe_lCAG-130" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="АБС" vertex="1">
-          <mxGeometry height="430" width="90" x="570" y="400" as="geometry" />
+        <mxCell id="72ORIeSIiEWqqJe_lCAG-130" parent="1" style="shape=stencil(pZLBEoIgEEC/hjsD5djZ7D8Qt2QkcAC1/j6YLTOaOtSF2bc8WFggvPKdGIAwOhO+J4wVGxbHyB0yK0tk4QeQAZOTcEo0GnDGB2d7mFUb7muU6cCpkGZ5TXjVCNmfnB1NizyIZKbobKdU+4Lrto9aV2SKRNgBba3Myl5O+pO93OuDT/+xi91XO7/nuy+19bBOxODZtQh5S4/WwQsrrfFdsl1yMabwB/D6Bg==);whiteSpace=wrap;html=1;verticalAlign=bottom;spacing=0;spacingBottom=2;" value="АБС" vertex="1">
+          <mxGeometry height="288" width="642" x="-15" y="400" as="geometry" />
         </mxCell>
         <mxCell id="72ORIeSIiEWqqJe_lCAG-131" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Система кол-центра" vertex="1">
           <mxGeometry height="60" width="90" x="-420" y="790" as="geometry" />
@@ -400,16 +400,16 @@
           <mxGeometry height="60" width="90" x="-420" y="870" as="geometry" />
         </mxCell>
         <mxCell id="72ORIeSIiEWqqJe_lCAG-133" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;СМС-шлюз телеком-оператора&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="80" x="630" y="380" as="geometry" />
+          <mxGeometry height="60" width="80" x="-110" y="380" as="geometry" />
         </mxCell>
         <mxCell id="72ORIeSIiEWqqJe_lCAG-134" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Телеком-оператор" vertex="1">
           <mxGeometry height="60" width="120" x="-300" y="1090" as="geometry" />
         </mxCell>
         <mxCell id="72ORIeSIiEWqqJe_lCAG-135" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Сайт" vertex="1">
-          <mxGeometry height="60" width="60" x="-230" y="390" as="geometry" />
+          <mxGeometry height="60" width="60" x="175" y="1030" as="geometry" />
         </mxCell>
         <mxCell id="72ORIeSIiEWqqJe_lCAG-136" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;Кредитный конвейер&lt;/div&gt;" vertex="1">
-          <mxGeometry height="90" width="80" x="400" y="570" as="geometry" />
+          <mxGeometry height="66" width="80" x="400" y="544" as="geometry" />
         </mxCell>
         <mxCell id="72ORIeSIiEWqqJe_lCAG-137" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Система кредитного скоринга" vertex="1">
           <mxGeometry height="60" width="70" x="500" y="540" as="geometry" />
@@ -418,7 +418,7 @@
           <mxGeometry height="60" width="120" x="-300" y="1000" as="geometry" />
         </mxCell>
         <mxCell id="72ORIeSIiEWqqJe_lCAG-140" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Excel" vertex="1">
-          <mxGeometry height="240" width="50" x="740" y="410" as="geometry" />
+          <mxGeometry height="142" width="50" x="740" y="465" as="geometry" />
         </mxCell>
         <mxCell id="72ORIeSIiEWqqJe_lCAG-141" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;e-mail&lt;/div&gt;" vertex="1">
           <mxGeometry height="130" width="30" x="680" y="520" as="geometry" />
